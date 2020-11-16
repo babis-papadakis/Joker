@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1592571732 source:c:\users\flowerr\desktop\c++\hello world\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<cstring>
+	<bits/stdc++.h>
+

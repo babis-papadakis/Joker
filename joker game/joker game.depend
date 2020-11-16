@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1592572508 source:c:\users\flowerr\desktop\c++\joker game\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<cstring>
+	<bits/stdc++.h>
+
