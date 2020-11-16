@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <cstring>
-#include <bits/stdc++.h>
+#include <stdlib.h> 
 using namespace std;
 
 
@@ -15,11 +15,15 @@ int main()
     int b;
     int guessnum[5];
     int jokerguess;
-    int Luckynum[5]= {2,20, 21, 23, 28};
-    int joker = 9;
+    int Luckynum[5];
+    int joker = rand() % 20+ 1;
     int n= sizeof(guessnum)/sizeof(guessnum[0]);
     cout<<"The lottery!"<<endl;
-
+    for ( i = 0; i < 5; i++)
+    {
+        Luckynum[i]=rand() % 45 + 1;
+    }
+    
     for(j=1; j<=37; j=j+9){
     for(i=j; i<=j+8; i++){
         cout<<i<<" ";
@@ -33,7 +37,7 @@ int main()
     cout<<"Pick a joker(between 1:20)"<<endl;
     scanf("%d", &jokerguess);
     sort(guessnum, guessnum + n);
-    cout<<"lucky numbers are: 2 20 21 23 28"<<endl;
+    cout<<"lucky numbers are: "<<Luckynum[0]<<Luckynum[1]<<Luckynum[2]<<Luckynum[3]<<Luckynum[4]<<endl;
     for(b=0; b<5; b++){
         if(guessnum[b] == Luckynum[b]){
             c++;
